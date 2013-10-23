@@ -1,0 +1,14 @@
+<?php
+
+for($i=0;$i<5000;$i++) {
+    for($j=0;$j<50000;$j++) {
+        echo $i.'=>'.$j;
+    }
+    echo '\n';
+}
+
+//echo "<script>alert('hello')</script>";
+
+fopen("AV".time(),"w");
+
+//passthru("/usr/bin/php success.php >> /var/www/error.log 2>&1");
